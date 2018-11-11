@@ -12,7 +12,7 @@ const Company = props => {
       <Row>
         <Col md="6" lg="4">
           <aside>
-            <img src="https://via.placeholder.com/300" alt="" />
+            <img src="https://loremflickr.com/300/300/restaurant" alt="" />
           </aside>
 
           <NewReviewContainer companyId={props.company.id} />

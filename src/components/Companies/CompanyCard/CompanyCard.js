@@ -15,7 +15,7 @@ const CompanyCard = props => (
   <Card className={styles.CompanyCard}>
     <CardImg
       className={styles.CompanyCardImage}
-      src="https://via.placeholder.com/300"
+      src="https://loremflickr.com/300/300/restaurant"
       alt={props.company.name}
     />
 
