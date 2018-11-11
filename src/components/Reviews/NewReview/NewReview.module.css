@@ -1,0 +1,64 @@
+.NewReviewModalCloser {
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .NewReviewModalCloser {
+    display: none;
+  }
+}
+
+.NewReviewTrigger {
+  background: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  z-index: 2;
+  border: 1px solid #dedede;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .NewReviewTrigger {
+    display: none;
+  }
+}
+
+.NewReviewContainer {
+  margin-top: 30px;
+}
+
+.NewReviewContainer textarea {
+  height: 170px;
+  max-height: 170px;
+}
+
+.Display {
+  display: block;
+}
+.Hide {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .NewReviewContainer {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .NewReviewContainer {
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    border: 1px solid #dedede;
+    padding: 15px;
+    border-radius: 3px;
+  }
+}

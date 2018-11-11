@@ -1,0 +1,25 @@
+.ReviewCard {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.ReviewCardBodyHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ReviewCardDate {
+  font-size: x-small;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.ReviewCardAuthor {
+  font-size: small;
+}
+
+.ReviewCardSubTitle,
+.ReviewCardTitle {
+  width: 80%;
+}
+

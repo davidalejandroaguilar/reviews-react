@@ -1,0 +1,25 @@
+.Section {
+  text-align: center;
+}
+
+.DetailsContainer {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .Section {
+    text-align: left;
+  }
+
+  .DetailsContainer {
+    margin-top: initial;
+  }
+
+  .DetailsContainer {
+    display: flex;
+  }
+
+  .ReviewContainer {
+    width: 300px;
+  }
+}

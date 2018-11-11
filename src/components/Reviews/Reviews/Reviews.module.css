@@ -1,0 +1,11 @@
+.ReviewsContainer {
+}
+
+.ReviewsPagination {
+}
+
+@media (min-width: 768px) {
+  .Reviews {
+    min-height: 600px;
+  }
+}
