@@ -1,0 +1,13 @@
+.SearchContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.SearchFormGroup {
+  width: 92%;
+}
+
+.SearchContainer .SearchInput {
+  width: 100% !important;
+}
