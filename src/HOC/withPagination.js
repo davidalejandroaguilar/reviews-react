@@ -7,8 +7,8 @@ import React, { Component } from 'react';
 // How you show that collection is up to you, this HOC only provides the logic
 // to paginate.
 //
-// A suggestion is to write your own presentational component, or use a
-// library like react-js-paginate, which has (only) the presentational
+// A suggestion is to write your own presentational component for pagination,
+// or use a library like react-js-paginate, which has (only) the presentational
 // component ready to use with this HOC.
 const withPagination = (WrappedComponent, { itemsCountPerPage }) => {
   // This is done so that the WrappedComponent can still be passed a collection
@@ -16,8 +16,7 @@ const withPagination = (WrappedComponent, { itemsCountPerPage }) => {
   // to requiring to pass something like <Companies items={companies} />.
   // Mainly because the user of the WrappedComponent won't know it has been
   // wrapped withPagination.
-  const wrappedComponentName = WrappedComponent.name;
-  const collectionName = wrappedComponentName
+  const collectionName = WrappedComponent.name
     .split(/(?=[A-Z])/)[0]
     .toLowerCase();
 
@@ -31,9 +30,11 @@ const withPagination = (WrappedComponent, { itemsCountPerPage }) => {
     };
 
     render() {
-      if (!this.props[collectionName])
+      const collection = this.props[collectionName];
+
+      if (!collection)
         throw new Error(`Invalid collection name. If your component is called
-          ${wrappedComponentName}, the collection you pass as props should be
+          ${WrappedComponent.name}, the collection you pass as props should be
           the first part of the name e.g. <Reviews reviews={reviews} />.
           Instead of <Reviews somethings={reviews}/>.`);
 
