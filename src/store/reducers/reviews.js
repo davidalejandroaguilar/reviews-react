@@ -37,6 +37,18 @@ const initialState = {
             quas nisi. Incidunt iure, labore nihil!`,
     title: 'I liked it a lot!.',
     createdAt: '14/10/2009'
+  },
+  '4': {
+    id: '4',
+    companyId: '1',
+    userId: '1',
+    rating: '4',
+    description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Autem similique laboriosam ratione magni perferendis facilis eius
+            architecto, quaerat harum tenetur possimus commodi, illum atque
+            quas nisi. Incidunt iure, labore nihil!`,
+    title: 'I liked it a lot!.',
+    createdAt: '16/10/2009'
   }
 };
 

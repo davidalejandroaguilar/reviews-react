@@ -5,7 +5,7 @@ import { Route } from 'react-router-dom';
 import { Container } from 'reactstrap';
 
 import NavigationBar from './components/UI/NavigationBar/NavigationBar';
-import CompanyListContainer from './containers/Companies/CompanyList/CompanyListContainer';
+import CompaniesContainer from './containers/Companies/Companies/CompaniesContainer';
 import CompanyContainer from './containers/Companies/Company/CompanyContainer';
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
         <NavigationBar />
 
         <Container className={styles.App}>
-          <Route path="/" exact component={CompanyListContainer} />
+          <Route path="/" exact component={CompaniesContainer} />
           <Route path="/companies/:id" component={CompanyContainer} />
         </Container>
       </React.Fragment>
