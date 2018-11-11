@@ -1,25 +1,43 @@
 .CompanyCard {
   margin: 15px 0;
-  flex-direction: row;
-  height: 300px;
   overflow: hidden;
+  height: 600px;
+}
+
+@media (min-width: 768px) {
+  .CompanyCard {
+    flex-direction: row;
+    height: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .CompanyCard {
+    height: 300px;
+  }
 }
 
 .CompanyCardImage {
-  width: 30%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .CompanyCardImage {
+    width: 30%;
+  }
 }
 
 .CompanyCardBody {
-  width: 0%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
   .CompanyCardBody {
+    width: 0%;
     margin-left: 15px;
-    width: 100%;
   }
 }
 
@@ -31,6 +49,8 @@
 
 .CompanyCardTitle {
   font-size: xx-large;
+  display: flex;
+  justify-content: space-between;
 }
 
 .CompanyCardTitleLink {
@@ -39,22 +59,6 @@
 
 .CompanyCardTitleLink:hover {
   text-decoration: none;
-}
-
-.CompanyCardAverage {
-  width: 605px;
-}
-
-@media (min-width: 768px) {
-  .CompanyCardAverage {
-    width: 235px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .CompanyCardAverage {
-    width: 145px;
-  }
 }
 
 .CompanyCardActions {

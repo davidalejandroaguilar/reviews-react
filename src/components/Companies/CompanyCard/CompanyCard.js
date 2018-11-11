@@ -23,18 +23,22 @@ const CompanyCard = props => (
       <div className={styles.CompanyCardBodyHeader}>
         <div>
           <CardTitle className={styles.CompanyCardTitle}>
-            <Link
-              to={'/companies/' + props.company.id}
-              className={styles.CompanyCardTitleLink}>
-              {props.company.name}
-            </Link>
+            <div>
+              <Link
+                to={'/companies/' + props.company.id}
+                className={styles.CompanyCardTitleLink}>
+                {props.company.name}
+              </Link>
+            </div>
+            <div>
+              {' '}
+              <h6 className={styles.CompanyCardAverage}>
+                {props.company.average} / 5.0
+              </h6>
+            </div>
           </CardTitle>
           <CardText>{props.company.description}</CardText>
         </div>
-
-        <h6 className={styles.CompanyCardAverage}>
-          {props.company.average} / 5.0
-        </h6>
       </div>
       <div className={styles.CompanyCardActions}>
         <Button
