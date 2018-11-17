@@ -8,11 +8,11 @@ const Search = props => (
   <div>
     <Form inline tag={FormikForm}>
       <div className={styles.SearchContainer}>
-        <FormGroup
-          className={'mb-2 mr-sm-2 mb-sm-0' + ' ' + styles.SearchFormGroup}>
+        <FormGroup className={`mb-2 mr-sm-2 mb-sm-0 ${styles.SearchFormGroup}`}>
           <Label for="search" />
           <Input
             tag={Field}
+            autoComplete="off"
             name="search"
             id="search"
             placeholder="Search a company..."
