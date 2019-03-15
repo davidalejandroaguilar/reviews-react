@@ -18,8 +18,4 @@
   .DetailsContainer {
     display: flex;
   }
-
-  .ReviewContainer {
-    width: 300px;
-  }
 }
